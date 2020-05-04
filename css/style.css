@@ -1,79 +1,70 @@
+:root {
+  --primary-color: #926239;
+  --light-gray: #f4f4f4;
+  --lighter-gray: #f9f9f9;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  color: var(--primary-color);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
-  line-height: 1.6;
-  color: #926239;
-} 
+}
 #showcase {
-  background-image: url('../img/showcase.jpg');
   height: 100vh;
-  background-size: cover;
+  background: url('../img/showcase.jpg');
   background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 0 20px;
-}
-
-#showcase h1 {
-  font-size: 50px;
-  line-height: 1.2;
-}
-
-#showcase p {
-  font-size: 20px;
 }
 #showcase .button {
-  font-size: 18px;
+  color: var(--primary-color);
   text-decoration: none;
-  color: #926239;
   padding: 10px 20px;
   margin-top: 20px;
-  border: 1px solid #926239;
+  border: 1px solid var(--primary-color);
   border-radius: 10px;
-  transition: background 500ms ease;
-  transition: color 500ms ease;
+  transition: all 300ms;
 }
 #showcase .button:hover {
-  background: #926239;
-  color: #fff;
+  background: var(--primary-color);
+  opacity: 0.8;
+  color: var(--light-gray);
 }
 
 #section-a {
-  padding: 20px;
-  background: #926239;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--light-gray);
   text-align: center;
+  padding: 20px;
 }
 #section-b {
-  padding: 20px;
-  background: #f4f4f4;
-  
+  background: var(--light-gray);
+  color: var(--primary-color);
   text-align: center;
+  padding: 20px;
 }
 #section-c {
   display: flex;
-  
-}
-#section-c .box-1,
-#section-c .box-3 {
-  background: #926239;
-  color: #fff;
+  justify-content: space-around;
+  margin: 20px 0;
 }
 #section-c div {
   padding: 20px;
+  flex-basis: 28%;
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
+}
+#section-c .box-1,
+#section-c .box-3 {
+  background: var(--primary-color);
+  color: var(--lighter-gray);
 }
 #section-c .box-2 {
-  background: #f9f9f9;
-  color: #926239;
+  background: var(--lighter-gray);
 }
